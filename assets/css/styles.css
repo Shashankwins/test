@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'shashank',sans-serif;
+}
+
+button {
+    color: #fff;
+}
+
+.sectionHeading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sectionHeading h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* topHeader css start */
+.topHeader {
+    padding: 10px 0;
+}
+
+.topHeader .socialMedia {
+    float: right;
+}
+
+.topHeader a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+.topHeader a:last-child {
+    margin-right: 0;
+}
+
+.topHeader i {
+    color: #1977cc;
+}
+
+ header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+/* topHeader css end */
+
+/* media query start  */
+
+@media screen and (max-width: 767px) {
+    .topHeader{
+        text-align: center;
+    }
+
+   .topHeader .socialMedia{
+        float: none;
+        margin-top: 10px;
+    }
+
+    .navMenu #logo {
+        padding-left: 15px;
+    }
+
+    .about .vidCol {
+        padding-left: 15px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .row .col-sm-12 .socialLinks {
+        float: none;
+    }
+}
+
+/* media query end */
+
+/* navMenu css start */
+#myNavbar a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+.navMenu {
+    padding: 10px 0;
+    border: 1px solid #e0e0e0;
+    box-shadow: -10px #1977cc;
+}
+#myNavbar {
+    float: right;
+    padding-right: 0;
+}
+
+.navMenu nav {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 0;
+}
+
+.menuItems li a:hover {
+    border-bottom: 2px solid #1977cc;
+}
+
+.menuItems li:last-child a:hover {
+    border-bottom: none;
+}
+
+.menuItems li ul li a:hover {
+    border-bottom: none;
+}
+
+
+#myNavbar li:last-child .myBtn {
+    background-color: #1977cc;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 200px;
+    display: inline-block;
+}
+
+.menuItems ul li {
+    border: none;
+    background-color: #fff;
+    color: #2C4964;
+}
+/* navMenu css end */
+
+/* banner css start */
+.banner {
+    padding: 100px 0;
+    background-image: url(../images/banner-image.jpg);
+    background-position: center center;
+    min-height: 450px;
+    background-size: cover;
+    color: #2C4964;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.bannerBtn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #1977cc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+/* banner css end */
+
+/* uspSection css start */
+.uspSection {
+    margin-top: -100px;
+}
+.why {
+    background-color: #1977cc;
+    color: #fff;
+    padding: 40px 22px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.why h3, .why p {
+    margin-bottom: 30px;
+}
+
+.uspIcon i{
+    color: #1977cc;
+}
+
+.usp {
+    background-color: #fff;
+    color: #D7D6CB;
+    text-align: center;
+    padding: 40px 22px;
+    box-shadow: 0px 3px 15px #a0a0a0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.usp h4{
+    margin: 30px 0;
+    color: #000;
+}
+
+#subWhy {
+    margin-top: 35px;
+}
+
+.whyBtn {
+    text-align: center;
+}
+
+.whyBtn button {
+    background-color: #4792D6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+/* uspSection css end */
+
+/* about css start */
+.about {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.vidCol {
+    padding-left: 0;
+}
+
+.vid img {
+    width: 100%;
+}
+
+.cardIcon {
+    display: inline-block;
+    border: 1px solid #1977cc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.cardDetail {
+    display: inline-block;
+}
+
+.aboutInfo div:nth-child(1), .aboutInfo div:nth-child(2), .aboutInfo div:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+.aboutInfo i {
+    color: #1977cc;
+}
+/* about css end */
+
+/* counter css start */
+.counter {
+    background-color: #F1F7FD;
+    text-align: center;
+    padding: 60px 0 20px;
+}
+
+.counterCard {
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0 5px;
+    margin-bottom: 40px;
+}
+
+.counterIcon {
+    position: absolute;
+    background-color: #1977cc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    top: -40px;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.counterIcon i {
+    color: #fff;
+}
+/* counter css end */
+
+/* service css start */
+.service {
+    text-align: center;
+}
+ .service h3 {
+    font-weight: 900;
+ }
+
+.serviceCard {
+    border: 1px solid #D5E1ED;
+    padding: 70px 30px;
+    margin-bottom: 30px;
+}
+
+.serviceIcon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    background-color: #1977cc;
+    border-radius: 5px;
+    box-shadow: -7px -7px #BADAF7 ;
+}
+/* services css end */
+
+/* appointmentForm css start */
+.appointmentForm {
+    background-color: #F1F7FD;
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.formBtn {
+    border-radius: 17px;
+    background-color: #1977cc;
+    font-weight: 700;
+}
+/* appointmentForm css end */
+
+/* doc css start */
+
+.doc h4 {
+    font-weight: 700;
+}
+
+.docCard {
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px #a0a0a0;
+}
+
+.docPic img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.docCard hr {
+    width: 50px;
+}
+
+.docCard .socialLinks a {
+    text-align: center;
+}
+
+.docCard .socialLinks a i {
+    width: 30px;
+    height: 30px;
+    background-color: #A0BCD5;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+}
+/* doc css end */
+
+/* faqSection css start */
+.faqSection {
+    background-color: #F1F7FD;
+}
+
+.faq {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+}
+
+.ans {
+    padding-top: 10px;
+}
+
+.question a {
+    color: #000;
+    font-weight: 700;
+}
+
+.question a i {
+    color: #1977cc;
+}
+
+.question a:hover {
+    text-decoration: none;
+    color: #1977cc;
+}
+
+.sectionHeading {
+    text-align: center;
+}
+
+.faq span {
+    float: right;
+    color: #1977cc;
+}
+/* faqSection css end */
+
+/* gallery css start */
+.gallery {
+    margin: 30px 10px 0;
+}
+
+.galleryHeading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imgHolder {
+    padding: 0;
+}
+
+.galleryImg {
+    margin: 2px;
+}
+
+/* gallery css end */
+
+/* Top button css start */
+.gotoTop {
+    width: 40px;
+    height: 40px;
+    background-color: #1977cc;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 999;
+    border-radius: 3px;;
+}
+
+.gotoTop:active , .gotoTop:visited {
+    color: #fff;
+}
+
+.gotoTop:hover {
+    color: #fff;
+}
+/* Top button css end */
+
+/* footer css start */
+footer span {
+    color: #1977cc;
+}
+
+footer .socialLinks {
+    text-align: center;
+    float: right;
+}
+
+.socialLinks a {
+    margin-right: 5px;
+}
+
+footer .socialLinks a i {
+    width: 40px;
+    height: 40px;
+    background-color: #1977cc;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #F1F7FD;
+}
+/* footer css end */
+
+/* hr css start */
+
+.hr{
+   text-align: center; 
+   margin-bottom: 20px;
+}
+.inner {
+    text-align: center;
+    position: relative;
+    width: 100px;
+    display: inline-block;
+}
+ .first {
+    width: 100px;
+    border: 1px solid #D7D6CB;
+ }
+
+ .second {
+    width: 50px;
+    border: 2px solid #1977cc;
+    position: absolute;
+    top: -1px;
+    left: 25px;
+ }
+/* hr css end */
