@@ -1,0 +1,233 @@
+let arr=[1,7,[4,6]];
+arr.push(8);
+console.log(arr);
+arr.splice(2,0,"Vijaya");
+console.log(arr)
+arr[3].splice(0,0,false);
+console.log(arr);
+arr[3].splice(2,0,true);
+console.log(arr);
+
+
+
+//add elemnt from array;
+let a=[1,2,3,4];
+console.log(a);
+a.length=a.length+1;
+console.log(a);
+for(i=a.length-1;i>=1;i--)
+{
+    a[i]=a[i-1];
+}
+console.log(a);
+a[1]=7;
+console.log(a);
+
+
+//delete element from array
+let a=[1,2,3,4];
+console.log(a);
+for(i=1;i<a.length;i++)
+{
+    a[i]=a[i+1];
+}
+console.log(a);
+a.length=a.length-1;
+console.log(a);  
+
+
+
+
+array add
+/*let a=[1,2,3,4];
+console.log(a);
+let sum=0;
+for(let i=0;i<a.length;i++)
+{
+    sum= sum+a[i];
+}
+console.log(sum);*/
+
+
+
+string REverese
+let v= "shashank";
+console.log(v[3]);
+let s="";
+
+for(i=v.length-1;i>=0;i--)
+{
+    s= s+v[i];
+}
+console.log(s);
+
+
+
+
+
+let arr1=["xyz" , "abc" , "ccc"];
+let arr2=[{"name":"xyz", "id":1} , {"name":"abc", "id":2} , {"name":"ccc", "id":3}];
+for(let i=0;i<arr1.length;i++)
+{
+    if(arr1[i]==arr2[i].name)
+        {
+            arr1[i]=arr2[i].id;
+        }
+    else
+        {
+            continue;
+        }
+}
+console.log(arr1);
+
+
+
+let i=0;
+function print(){
+    if(i<=10)
+    {
+    console.log(i);
+    i++;
+    }
+    else {
+        return;
+    }
+    print();
+}
+print();
+
+
+
+
+let a= [1,2,3,4,5,6,7,8,9,10];
+const obj={
+        1 : "hello",
+        5 : 5,
+        10 :"world"
+}
+let b=Object.keys(obj);
+for(let i=0;i<b.length;i++)
+{
+    a[b[i]]=obj[b[i]];
+}
+console.log(a)
+
+
+
+
+
+
+//fibonacci series
+let first=0;
+let second=1;
+let n;
+for(let i=0;i<=10;i++)
+{
+    n=first+second;
+    console.log(first);
+    first=second;
+    second=n;
+}
+
+//palindorme
+let v="motom";
+for(let i=0;i<v.length;i++)
+{
+    if(v[i]==v[v.length-1-i])
+    {
+        if(i==v.length-1)
+        {
+            console.log(v+" "+"is palindrome")
+        }
+        else
+        {
+            continue;
+        }
+    }
+    else
+    {
+        console.log("Not Palindrome");
+        break;
+    }
+}
+
+
+
+//factorial
+let a=9;
+let fact=1;
+for(let i=1;i<=a;i++)
+{
+    fact=fact*i;
+}
+console.log("Factorial of " + a + " is " +fact);
+
+
+//if factorial
+let a=10;
+let num=720;
+let fact=1;
+for(let i=1;i<=a;i++)
+{
+    fact=fact*i;
+    if(fact<num)
+    {
+        continue;
+    }
+    else if(fact>num)
+    {
+        console.log("Not Factorial")
+        break;
+    }
+    else if(fact==num)
+    {
+        console.log(num +" is Factorial of" + " "+i)
+        break;
+    }
+}
+
+
+
+
+
+//filter
+let arr1= new Array();
+for(let i=0;i<arr.length;i++)
+{
+     if(arr[i].name.includes("Un"))
+     {
+         arr1.push(arr[i])
+     }
+     else
+     {
+         continue;
+     }
+}
+console.log(arr1);
+
+
+//obj true false
+const obj1= { name: 'raasdsad', age: 43};
+const obj2= { name: 'ram', age: 43};
+const obj3= {};
+function check(a,b){
+    if(a.name===b.name)
+    {
+        obj3.name= true;
+    }
+    else
+    {
+        obj3.name= false;   
+    }
+    if(a.age===b.age)
+    {
+        obj3.age= true;
+    }
+    else
+    {
+        obj3.age= false;
+    }
+    return obj3;
+}
+
+console.log(check(obj1,obj2));
