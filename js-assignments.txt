@@ -231,3 +231,55 @@ function check(a,b){
 }
 
 console.log(check(obj1,obj2));
+
+
+Date- 24/10/23
+//star pattern
+let n=5;
+let str="";
+for(let i=0;i<5;i++){
+    for(let j=0;j<=i;j++){
+        str+="*";
+    }
+    str+="\n";
+}
+console.log(str);
+
+//number pattern 1
+let n=5;
+let str="";
+for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+        str+=i;
+    }
+    str+="\n";
+}
+console.log(str);
+
+//number pattern 2
+let n=5;
+let str="";
+for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+        str+=j;
+    }
+    str+="\n";
+}
+console.log(str);
+
+
+//number pattern 3
+let n=5;
+let str="";
+for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+        if(j%2==0){
+            str+="1"
+        }
+        else {
+            str+="0"
+        }
+    }
+    str+="\n";
+}
+console.log(str);
