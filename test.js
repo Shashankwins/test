@@ -1,4 +1,4 @@
-let arr=["1","2","2","1","1","3"];
+let arr=["1","2","2","1","1","3","4","1","4"];
 let obj={};
 
 let count;
@@ -16,5 +16,6 @@ for(let i=0;i<arr.length;i++)
             continue;
         }
     }
-    console.log(arr[i]+" comes "+count+" times")
+    console.log(count);
 }
+console.log(obj);
