@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppinsmedium, sans-serif;
+}
+
+h2 {
+    text-transform: capitalize;
+    color: #337ab7;
+}
+
+.menu-wrapper {
+    text-align: center;
+}
+
+.menu{
+    display: inline-block;
+    float: none;
+}
+
+.firstRow div {
+    margin-bottom: 20px;
+    /* background-color: #f2f2f2 */
+}
+
+.border {
+    border: 1px solid #eee;
+    padding: 40px 20px;
+}
+
+/* form {
+    background-color: #f2f2f2;
+} */
