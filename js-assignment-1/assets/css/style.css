@@ -24,7 +24,6 @@ h2 {
 
 .firstRow div {
     margin-bottom: 20px;
-    /* background-color: #f2f2f2 */
 }
 
 .border {
@@ -32,6 +31,34 @@ h2 {
     padding: 40px 20px;
 }
 
-/* form {
-    background-color: #f2f2f2;
-} */
+/* Calculator CSS start */
+
+section {
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+table td {
+    width: 20px;
+}
+
+table tr:nth-child(2) td input {
+    background-color: grey;
+}
+
+table input {
+    width: 100%;
+    height: 50px;
+}
+
+#equal {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    line-height: 250px;
+    background-color: #337ab7;
+    color: #fff;
+}
