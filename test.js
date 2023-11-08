@@ -244,3 +244,7 @@ for(let i=0;i<arr.length;i++)
     }
 }
 console.log(b);
+
+let arr1= arr.reduce( (acc , cur) => acc.push(cur), [])
+
+console.log(arr1);
