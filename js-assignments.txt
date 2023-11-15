@@ -118,17 +118,23 @@ for(let i=0;i<=10;i++)
 }
 
 //palindorme
-let v="motom";
-for(let i=0;i<v.length;i++)
+let v="madam";
+let size= v.length-1;
+let mid= Math.ceil(v.length/2)
+console.log(size)
+console.log(mid)
+for(let i=0;i<size;i++)
 {
-    if(v[i]==v[v.length-1-i])
+    if(v[i]==v[size-i])
     {
-        if(i==v.length-1)
+        if(i==mid)
         {
             console.log(v+" "+"is palindrome")
+            break;
         }
         else
         {
+            console.log(v[i] +" = "+ v[size-i])
             continue;
         }
     }
@@ -138,6 +144,7 @@ for(let i=0;i<v.length;i++)
         break;
     }
 }
+
 
 
 

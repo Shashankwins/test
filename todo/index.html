@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/raleway.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>to-do list</h1>
+                </div>
+                <div class="col-sm-12">
+                    <h3>add task</h3>
+                    <input type="text" id="insert" placeholder="Add a new task here" class="form-control" maxlength="100">
+                    <input type="button" value="Add to list" id="addBtn" onclick="save()">
+                </div>
+                <div class="col-sm-12">
+                    <ul id="taskList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
