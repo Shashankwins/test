@@ -324,3 +324,63 @@ for(let i=1;i<=5;i++)
     str= str + "\n";
 }
 console.log(str);
+
+
+
+//pattern
+let str="";
+let b=5;
+function print(a){
+  for(let i=0;i<a;i++)
+  {
+      for(let j=0;j<=i;j++)
+      {
+          if(i%2==0)
+          {
+              if(j%2==0)
+              {
+                  str=str+"0";
+              }
+              else
+              {
+                  str=str+"1"
+              }
+          }
+          else
+          {
+              if(j%2==0)
+              {
+                  str=str+"1";
+              }
+              else
+              {
+                  str=str+"0"
+              }
+          }
+      }
+      str=str+"\n"
+  }
+  return str;
+}
+console.log(print(b));
+
+//Pyramid pattern
+let str="";
+for(let i=1;i<=5;i++)
+{
+  let l=5-i;
+  let r=5+i;
+  for(let j=1;j<=10;j++)
+  {
+    if(j>l && j<r)
+    {
+      str=str+"*"
+    }
+    else
+    {
+      str=str+" "
+    }
+  }
+  str=str+"\n"
+}
+console.log(str);
