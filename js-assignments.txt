@@ -363,3 +363,24 @@ function print(a){
   return str;
 }
 console.log(print(b));
+
+//Pyramid pattern
+let str="";
+for(let i=1;i<=5;i++)
+{
+  let l=5-i;
+  let r=5+i;
+  for(let j=1;j<=10;j++)
+  {
+    if(j>l && j<r)
+    {
+      str=str+"*"
+    }
+    else
+    {
+      str=str+" "
+    }
+  }
+  str=str+"\n"
+}
+console.log(str);
