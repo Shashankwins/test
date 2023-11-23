@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'shashank',sans-serif;
+}
+
+/* reg page css start*/
+section {
+    background-image: url(../images/login-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+section h1 {
+    text-align: center;
+    color: #1977cc;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 30px 40px;
+}
+
+i {
+    font-size: 116px;
+    color: #1977cc;
+    margin-bottom: 30px;
+}
+
+.formcontainer {
+    text-align: left;
+    margin: 20px 0;
+    color: #000;
+}
+
+form input {
+    margin-bottom: 30px;
+    border: none;
+}
+
+button {
+    background-color: #1977cc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    
+}
+/* reg page css end */
