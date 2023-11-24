@@ -42,12 +42,13 @@ function cls() {
 let login = document.querySelector('#loginForm');
 login.addEventListener('click' , function(e) {
     e.preventDefault();
-    let user = document.getElementById(uname);
-    let password = document.getElementById(psw);
-    if(localStorage.getItem(user))
+    let user = document.getElementById('uname');
+    let password = document.getElementById('psw');
+    if(localStorage.getItem())
     {
         user.psw === password;
         console.log("Welcome")
+        window.location.href="./sign-up.html"
     }
     else
     {
