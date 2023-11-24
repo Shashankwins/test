@@ -6,12 +6,71 @@
 //         this.mail = mail;
 //         this.psw = psw;
 //     }
-// }
+// 
 let signup = document.querySelector('#signUpForm');
 signup.addEventListener('submit' , function(e) {
     e.preventDefault();
-    register();
+    if(check())
+    {
+        register();
+    }
 })
+
+function check(){
+    let uname = document.getElementById('uname').value;
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
+    let mail = document.getElementById('mail').value;
+    let psw = document.getElementById('psw').value;
+    let unameRegex = /^[a-zA-Z0-9]{4,12}$/;
+    let fnameRegex = /^[a-zA-Z]{1,10}$/;
+    let lnameRegex = /^[a-zA-Z]{1,10}$/;
+    let mailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9-]+)(\.[a-zA-Z]{2,6})+$/;
+    let pswRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[a-zA-Z\d@$!%*#?&]{4,16}$/;
+
+    if(localStorage.getItem(uname))
+    {
+        alert("user already exist!");
+        cls();
+        return;
+    }
+    if(!uname || !fname || !lname || !mail || !psw)
+    {
+        alert("Please fill all the fields");
+        return;
+    }
+    if(!unameRegex.test(uname))
+    {
+        document.getElementById('unameValid').style.visibility="visible";
+        return false;
+    }
+    document.getElementById('unameValid').style.visibility="hidden"
+    if(!fnameRegex.test(fname))
+    {
+        document.getElementById('fnameValid').style.visibility="visible";
+        return false;
+    }
+    document.getElementById('fnameValid').style.visibility="hidden";
+    if(!lnameRegex.test(lname))
+    {
+        document.getElementById('lnameValid').style.visibility="visible";
+        return false;
+    }
+    document.getElementById('lnameValid').style.visibility="hidden";
+    if(!mailRegex.test(mail))
+    {
+        document.getElementById('mailValid').style.visibility="visible";
+        return false;
+    }
+    document.getElementById('mailValid').style.visibility="hidden";
+    if(!pswRegex.test(psw))
+    {
+        document.getElementById('pswValid').style.visibility="visible";
+        return false;
+    }
+    document.getElementById('pswValid').style.visibility="hidden";
+    return true;
+}
 
 function register(){
     let uname = document.getElementById('uname').value;
@@ -19,8 +78,7 @@ function register(){
     let lname = document.getElementById('lname').value;
     let mail = document.getElementById('mail').value;
     let psw = document.getElementById('psw').value;
-    let a = toString(uname)
-    a = {};
+    let a = {};
     a['uname'] = uname;
     a['fname'] = fname;
     a['lname'] = lname;
@@ -28,7 +86,7 @@ function register(){
     a['psw'] = psw;
     localStorage.setItem( a.uname , JSON.stringify(a)) 
     cls();
-    window.location.href="./login.html"
+    alert("Registered Successfully");
 }
 
 function cls() {
@@ -39,19 +97,3 @@ function cls() {
     document.getElementById('psw').value="";
 }
 
-let login = document.querySelector('#loginForm');
-login.addEventListener('click' , function(e) {
-    e.preventDefault();
-    let user = document.getElementById('uname');
-    let password = document.getElementById('psw');
-    if(localStorage.getItem())
-    {
-        user.psw === password;
-        console.log("Welcome")
-        window.location.href="./sign-up.html"
-    }
-    else
-    {
-        console.log("No such user")
-    }
-})

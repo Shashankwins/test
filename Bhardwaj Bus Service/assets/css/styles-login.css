@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'shashank',sans-serif;
+    background-image: url(../images/login-bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+/* reg page css start*/
+section {
+   margin-top: 100px;
+}
+
+.wrapper {
+    background-color: antiquewhite;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: -1px 4px 28px 0px rgba(87, 82, 82, 0.75);
+}
+
+section h1 {
+    text-align: center;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+i {
+    font-size: 116px;
+    color: #000;
+}
+
+.formcontainer {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.formcontainer p {
+    margin: 5px 0 15px 10px;
+    color: #f00;
+}
+
+button {
+    background-color: #0f0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+form p a {
+    color: #000;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#uname , #psw {
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+}
+/* reg page css end */
