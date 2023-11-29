@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/raleway.css">
     <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/seats.css">
 </head>
 <body>
     <section>
@@ -15,24 +16,24 @@
             <table>
                 <tr>
                     <td><button>01</button></td>
-                    <td><button></button></td>
-                    <td><button></button></td>
-                    <td><button></button></td>
-                    <td><button></button></td>
-                    <td><button>U</button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button><i class="fa-solid fa-dharmachakra"></i></button></td>
                 </tr>
                 <tr>
                     <td><button>02</button></td>
                     <td><button>03</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>04</button></td>
                     <td><button>05</button></td>
                     <td><button>06</button></td>
                 </tr>
                 <tr>
-                    <td><button></button></td>
-                    <td><button></button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>07</button></td>
                     <td><button>08</button></td>
                     <td><button>09</button></td>
@@ -40,7 +41,7 @@
                 <tr>
                     <td><button>10</button></td>
                     <td><button>11</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>12</button></td>
                     <td><button>13</button></td>
                     <td><button>14</button></td>
@@ -48,7 +49,7 @@
                 <tr>
                     <td><button>15</button></td>
                     <td><button>16</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>17</button></td>
                     <td><button>18</button></td>
                     <td><button>19</button></td>
@@ -56,7 +57,7 @@
                 <tr>
                     <td><button>20</button></td>
                     <td><button>21</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>22</button></td>
                     <td><button>23</button></td>
                     <td><button>24</button></td>
@@ -64,7 +65,7 @@
                 <tr>
                     <td><button>25</button></td>
                     <td><button>26</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>27</button></td>
                     <td><button>28</button></td>
                     <td><button>29</button></td>
@@ -72,7 +73,7 @@
                 <tr>
                     <td><button>30</button></td>
                     <td><button>31</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>32</button></td>
                     <td><button>33</button></td>
                     <td><button>34</button></td>
@@ -80,15 +81,15 @@
                 <tr>
                     <td><button>35</button></td>
                     <td><button>36</button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>37</button></td>
                     <td><button>38</button></td>
                     <td><button>39</button></td>
                 </tr>
                 <tr>
-                    <td><button></button></td>
-                    <td><button></button></td>
-                    <td><button></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
+                    <td><button disabled hidden></button></td>
                     <td><button>40</button></td>
                     <td><button>41</button></td>
                     <td><button>42</button></td>
@@ -104,8 +105,13 @@
             </table>
         </div>
     </section>
+        <div id="seatContainer">
+        </div>
+        <div id="selectedSeats"></div>
+        <div id="total">Total: &#8377 0</div>
+        <button>Pay</button>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/seats.js"></script>
 </body>
 </html>

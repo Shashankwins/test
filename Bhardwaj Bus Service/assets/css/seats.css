@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'shashank',sans-serif;
+}
+
+tr td {
+    padding: 5px;
+}
+table button {
+    color: #000;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid  #000;
+    border-radius: 5px;
+}
+
+.booked {
+    background-color: #a0a0a0;
+    color: #fff;
+}
+
+.selected  {
+    background-color: rgb(27, 82, 27);
+    color: #fff;
+}
