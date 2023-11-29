@@ -1,0 +1,11 @@
+<h1>This is a form</h1>
+<input type="text" [(ngModel)] = "uName" placeholder="Username">
+<input type="text" [(ngModel)] = "psw" placeholder="Password">
+<input type="text" [(ngModel)] ="test" placeholder="test">
+<button (click)="mask()">Mask</button>
+<button (click)="cls()">Clear</button>
+<div>
+    <p>Username is:<strong>{{uName}}</strong></p>
+    <p>Password is:{{psw}}</p>
+    <p>test = {{c}}</p>
+</div>
