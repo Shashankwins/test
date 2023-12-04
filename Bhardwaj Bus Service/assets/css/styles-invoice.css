@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'shashank',sans-serif;
+    background-image: url(../images/login-bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper{
+    background-color: antiquewhite;
+    padding: 40px;
+    margin-top: 100px;
+    border-radius: 20px ;
+}
+
+#details h5{
+    text-align: left;
+}
+
+table ,tr, td{
+    border: 1px solid #000;
+}
+
+th{
+    width: 800px;
+    height: 40px;
+    padding-left: 20px ;
+}
+
+td{
+    width: 200px;
+}
+

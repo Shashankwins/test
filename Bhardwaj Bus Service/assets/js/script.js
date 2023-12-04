@@ -86,6 +86,7 @@ function register(){
     localStorage.setItem( a.uname , JSON.stringify(a)) 
     cls();
     alert("Registered Successfully");
+    window.location.href="./index.html"
 }
 
 function cls() {

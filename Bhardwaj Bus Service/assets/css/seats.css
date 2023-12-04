@@ -6,6 +6,21 @@
 
 body {
     font-family: 'shashank',sans-serif;
+    text-align: center;
+    background-image: url(../images/login-bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.seatWrapper{
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px ;
+}
+
+table {
+    margin: 40px auto 0;
 }
 
 tr td {
@@ -14,10 +29,12 @@ tr td {
 table button {
     color: #000;
     background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border: 1px solid  #000;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
     border-radius: 5px;
+    user-select: none;
 }
 
 .booked {
@@ -26,6 +43,6 @@ table button {
 }
 
 .selected  {
-    background-color: rgb(27, 82, 27);
+    background-color: rgb(64, 199, 64);
     color: #fff;
 }
