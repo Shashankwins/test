@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/login-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'poppinsregular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header h2{
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.inputWrapper{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.inputWrapper label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.inputWrapper input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputWrapper i{
+    position: absolute;
+    visibility: hidden;
+    top: 43px;
+    right: 10px;
+}
+
+.inputWrapper.success i.fa-circle-check{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.inputWrapper.error i.fa-circle-exclamation{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.inputWrapper small{
+    position: absolute;
+    visibility: hidden;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+}
+
+.inputWrapper.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form button{
+    background-color: #f24923;
+    border: 2px solid #f24923;
+    border-radius: 4px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.inputWrapper.success input{
+    border: 2px solid #2ecc71;
+}
+
+.inputWrapper.error input{
+    border: 2px solid #e74c3c;
+}
+
+.wrapper p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

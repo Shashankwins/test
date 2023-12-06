@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Delivery App</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/all.css" />
+    <link rel="stylesheet" href="../assets/css/poppins.css" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="images/x-icon" />
+  </head>
+  <body>
+    <section>
+        <div class="wrapper">
+            <div class="header">
+                <h2>User Login</h2>
+            </div>
+            <form class="form" id="form">
+                <div class="inputWrapper">
+                    <label><strong>Username</strong></label>
+                    <input type="text" id="username" maxlength="12" placeholder="username">
+                    
+                    <small></small>
+                </div>
+                <div class="inputWrapper">
+                    <label><strong>Password</strong></label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class="fa-solid fa-eye" id="showPassword"></i>
+                    <i class="fa-solid fa-eye-slash" id="hidePassword" hidden></i>
+                    <small></small>
+                </div>
+                <button>login</button>
+            </form>
+        </div>
+    </section>
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/login.js"></script>
+  </body>
+</html>
