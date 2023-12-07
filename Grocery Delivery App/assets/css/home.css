@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(../images/login-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: antiquewhite;
+    min-height: 100vh;
+    font-family: 'poppinsregular', sans-serif;
+    position: relative;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header #myNav{
+    background-color: #e74d3c;
+    border: 1px solid #e74d3c;
+    color: #fff;
+}
+
+header #myNav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+ul .dropdown-menu{
+    background-color: #e74d3c;
+}
+
+header #myNav input{
+    width: 300px;
+}
+
+.productWrapper{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0 1px rgba(210, 210, 210, 0.5);
+  border-radius: 12px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.productWrapper:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    
+    .productDetails h4{
+        color: #2ecc71;
+    }
+
+    .productDetails{
+        box-shadow: 0px 0px 25px 0px rgba(46, 204, 113, 0.5);
+    }
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.productDetails h4{
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.productDetails p{
+    text-align: center;
+}
+
+
+.productPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.productImage {
+    align-self: center;
+    padding: 20px;
+}
+
+.productDetails{
+    padding:  30px 30px;
+}
+
+.productWrapper button{
+    width: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item{
+    padding: 20px;
+}
+
+#cartWrapper div{
+    margin-bottom: 30px;
+}

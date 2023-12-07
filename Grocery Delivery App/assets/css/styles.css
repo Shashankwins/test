@@ -72,7 +72,7 @@ body{
 
 .inputWrapper.error i.fa-circle-exclamation{
     visibility: visible;
-    color: #e74c3c;
+    color: #e74d3c
 }
 
 .inputWrapper small{
