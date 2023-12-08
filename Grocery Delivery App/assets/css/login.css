@@ -60,7 +60,6 @@ body{
 
 .inputWrapper i{
     position: absolute;
-    visibility: visible;
     cursor: pointer;
     color: #000;
     top: 43px;

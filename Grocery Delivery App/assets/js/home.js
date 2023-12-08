@@ -12,7 +12,7 @@ function getProducts() {
     productWrapper.innerHTML = "";
     for (let i = 0; i < productList.length; i++) {
       const product = document.createElement('div');
-      product.className = "col-sm-12 col-md-4 col-md-offset-4";
+      product.className = "col-sm-12 col-md-4 ";
       product.innerHTML = `
         <div class="productWrapper">
           <div class="productImage">

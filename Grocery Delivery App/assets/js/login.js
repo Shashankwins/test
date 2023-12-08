@@ -14,7 +14,7 @@ form.addEventListener('submit' , (e) => {
             sessionStorage.setItem('currentUser', JSON.stringify(data))
             sessionStorage.setItem( 'flag' , flag);
             alert('login successful')
-            // window.location.href='./home.html';
+            window.location.href='./home.html';
         }
         else
         {
@@ -33,21 +33,18 @@ function cls() {
     document.getElementById('psw').value="";
 }
 
-let psw = document.querySelectorAll('i')
-for(let i=0;i<psw.length;i++)
-{
-    psw[i].addEventListener('click', (e) => {
-        if(psw[i].id ==="showPassword")
-        {
-            psw[i].hidden=true;
-            document.getElementById('hidePassword').hidden=false;
-            document.getElementById('password').setAttribute('type', 'text')    
+let psw = document.querySelectorAll('i');
+
+for (let i = 0; i < psw.length; i++) {
+    psw[i].addEventListener('click', () => {
+        if (psw[i].id === "hidePassword") {
+            psw[i].style.display ='none';
+            document.getElementById('showPassword').style.display = 'inline-block';
+            document.getElementById('password').setAttribute('type', 'text');
+        } else if (psw[i].id === "showPassword") {
+            psw[i].style.display='none';
+            document.getElementById('hidePassword').style.display='inline-block';
+            document.getElementById('password').setAttribute('type', 'password');
         }
-        else if(psw[i].id ==="hidePassword")
-        {
-            psw[i].hidden=true;
-            document.getElementById('showPassword').hidden=false;
-            document.getElementById('password').setAttribute('type', 'password') 
-        }
-    })
+    });
 }
