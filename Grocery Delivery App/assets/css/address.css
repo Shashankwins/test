@@ -5,14 +5,34 @@
 }
 
 body{
-    background-image: url(../images/login-bg-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     min-height: 100vh;
     font-family: 'poppinsregular', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header #myNav{
+    background-color: #e74d3c;
+    border: 1px solid #e74d3c;
+    color: #fff;
+}
+
+header #myNav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+ul .dropdown-menu{
+    background-color: #e74d3c;
+}
+
+header #myNav input{
+    width: 300px;
 }
 
 .wrapper{
@@ -60,19 +80,10 @@ body{
 
 .inputWrapper i{
     position: absolute;
-    visibility: hidden;
-    top: 40px;
+    cursor: pointer;
+    color: #000;
+    top: 43px;
     right: 10px;
-}
-
-.inputWrapper.success i.fa-circle-check{
-    visibility: visible;
-    color: #2ecc71;
-}
-
-.inputWrapper.error i.fa-circle-exclamation{
-    visibility: visible;
-    color: #e74d3c
 }
 
 .inputWrapper small{
@@ -101,16 +112,67 @@ body{
     font-weight: 700;
 }
 
-.inputWrapper.success input{
-    border: 2px solid #2ecc71;
-}
-
-.inputWrapper.error input{
-    border: 2px solid #e74c3c;
-}
-
 .wrapper p{
     text-align: center;
     font-size: 14px;
     margin-bottom: 20px;
 }
+
+
+.addressCard {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .address-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .address-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .address-header i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+
+  h3{
+    font-weight: 700;
+  }
+
+  addressWrapper{
+    overflow: auto;
+  }

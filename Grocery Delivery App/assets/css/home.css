@@ -8,7 +8,7 @@ body{
     /* background-image: url(../images/login-bg-2.jpg);
     background-size: cover;
     background-repeat: no-repeat; */
-    background-color: antiquewhite;
+    background-color: #fff;
     min-height: 100vh;
     font-family: 'poppinsregular', sans-serif;
     position: relative;
@@ -40,80 +40,43 @@ header #myNav input{
     width: 300px;
 }
 
-.productWrapper{
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 0 1px rgba(210, 210, 210, 0.5);
-  border-radius: 12px;
-  width: 100%;
-  background-color: #fff;
-  margin-bottom: 30px;
-}
-
-.productWrapper:hover{
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-    
-    .productDetails h4{
-        color: #2ecc71;
-    }
-
-    .productDetails{
-        box-shadow: 0px 0px 25px 0px rgba(46, 204, 113, 0.5);
-    }
-}
-
-.productDetails{
+#productWrapper{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-
-.productDetails h4{
-    overflow: hidden;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0 0 20px;
-}
-
-.productDetails p{
-    text-align: center;
-}
-
-
-.productPrice{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.productImage {
-    align-self: center;
-    padding: 20px;
-}
-
-.productDetails{
-    padding:  30px 30px;
-}
-
-.productWrapper button{
-    width: 100px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+#productWrapper .productCard{
+    margin-bottom: 30px;
+    background-color: #fff;
     padding: 10px;
-}
-
-.grid-item{
-    padding: 20px;
+    margin-left: 30px;
+    border: 1px solid #a0a0a0;
+    box-shadow: 0 0 10px 5px rgba(210, 210, 210, 0.7);
+    border-radius: 5px;
 }
 
 #cartWrapper div{
     margin-bottom: 30px;
+}
+
+
+._product-detail-content {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+._product-detail-content p._p-name {
+    color: black;
+    font-size: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 12px;
+}
+
+#detailWrapper{
+    display: flex;
+    height: calc(100vh - 75px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

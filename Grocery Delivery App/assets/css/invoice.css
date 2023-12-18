@@ -1,0 +1,83 @@
+body {
+        /* background-image: url(../images/login-bg-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; */
+        background-color: #fff;
+        min-height: 100vh;
+        font-family: 'poppinsregular', sans-serif;
+        position: relative;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header #myNav{
+    background-color: #e74d3c;
+    border: 1px solid #e74d3c;
+    color: #fff;
+}
+
+header #myNav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+ul .dropdown-menu{
+    background-color: #e74d3c;
+}
+
+ul .dropdown-menu a:hover{
+    background-color: #e74d3c;
+}
+
+header #myNav input{
+    width: 300px;
+}
+
+.invoice-header {
+    padding: 15px;
+}
+.invoice-logo {
+    float: left;
+}
+.invoice-title {
+    float: right;
+}
+.invoice-body {
+    margin-top: 20px;
+}
+.invoice-details {
+    margin-bottom: 20px;
+}
+.invoice-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.invoice-details table th {
+    padding: 10px;
+    font-weight: bold;
+}
+.invoice-details table td {
+    padding: 10px;
+}
+.invoice-items {
+    margin-bottom: 20px;
+}
+.invoice-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.invoice-items table th {
+    padding: 10px;
+    font-weight: bold;
+}
+.invoice-items table td {
+    padding: 10px;
+}
+.invoice-summary {
+    font-weight: bold;
+}

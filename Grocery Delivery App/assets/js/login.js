@@ -1,5 +1,3 @@
-let flag = false;
-localStorage.setItem( 'flag' , JSON.stringify(flag))
 const form = document.getElementById('form')
 form.addEventListener('submit' , (e) => {
     e.preventDefault();
@@ -10,11 +8,9 @@ form.addEventListener('submit' , (e) => {
     {   
         if(data.password === password)
         {
-            flag = true;
             sessionStorage.setItem('currentUser', JSON.stringify(data))
-            sessionStorage.setItem( 'flag' , flag);
             alert('login successful')
-            window.location.href='./home.html';
+            window.location.href="./home.html";
         }
         else
         {
@@ -33,8 +29,7 @@ function cls() {
     document.getElementById('psw').value="";
 }
 
-let psw = document.querySelectorAll('i');
-
+let psw = document.querySelectorAll('i');   
 for (let i = 0; i < psw.length; i++) {
     psw[i].addEventListener('click', () => {
         if (psw[i].id === "hidePassword") {

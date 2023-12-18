@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <link rel="stylesheet" href="../assets/css/all.css" />
     <link rel="stylesheet" href="../assets/css/poppins.css" />
-    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/invoice.css" />
     <link rel="icon" href="../assets/images/favicon.ico" type="images/x-icon" />
-  </head>
+  </head>  
   <body>
     <header>
         <nav class="navbar navbar-default" id="myNav">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i><span id="cart"></span></a></li>
+                        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i><span id="cart">Cart(0)</span></a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa-solid fa-user"></i> <span id="userName">Profile</span></a>
                             <ul class="dropdown-menu">
                               <li><a href="#">My Profile</a></li>
@@ -37,30 +37,11 @@
             </div>
         </nav>
     </header>
-    <section>
-      <div class="container">
-          <div class="row">
-            <div class="col-sm-12 table-responsive" id="cartWrapper">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>S.No</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Remove</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-              <button class="btn btn-success" id="checkOut" onclick="checkOut()">Checkout</button>
-            </div>
-          </div>
-        </div>
-    </section>
+    <div class="container" id="invoiceWrapper">
+        
+    </div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
-    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/invoice.js"></script>
   </body>
 </html>

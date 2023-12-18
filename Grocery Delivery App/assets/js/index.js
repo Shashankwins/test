@@ -1,5 +1,6 @@
 const form = document.getElementById('form');
 const username = document.getElementById('username');
+const fname = document.getElementById('fname');
 const mail = document.getElementById('mail');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
@@ -13,8 +14,8 @@ form.addEventListener('submit', (e) => {
 })
 
 function validateInputs(){
-    debugger
     const usernameValue = username.value.trim();
+    const fnameValue = fname.value.trim()
     const mailValue = mail.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
@@ -36,6 +37,14 @@ function validateInputs(){
         return false;
     } else {
         successFor(username);
+    }
+
+    if(fnameValue === ''){
+        errorFor(fname, 'Name cannot be empty');
+        return false;
+    }
+    else {
+        successFor(fname);
     }
 
     if(mailValue === ''){
@@ -84,22 +93,27 @@ function successFor(input){
 
 function register(){
     const usernameValue = username.value.trim();
+    const fnameValue = fname.value.trim()
     const mailValue = mail.value.trim();
     const passwordValue = password.value.trim();
     const user = {};
     user['username'] = usernameValue;
+    user['name'] = fnameValue;
     user['mail'] = mailValue;
     user['password'] = passwordValue;
     localStorage.setItem( user.username , JSON.stringify(user))
     sessionStorage.setItem('currentUser',JSON.stringify(user)) 
     cls();
     alert("Account created successfully");
+    window.location.href='./pages/login.html'
 
 }
 
 function cls() {
     username.parentElement.className="inputWrapper";
     username.value ="";
+    fname.parentElement.className="inputWrapper";
+    fname.value ="";
     mail.parentElement.className="inputWrapper";
     mail.value ="";
     password.parentElement.className="inputWrapper";
