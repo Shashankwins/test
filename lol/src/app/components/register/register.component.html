@@ -1,0 +1,21 @@
+<section class="wrapper">
+    <div class="formWrapper">
+        <h1>User Sign-Up</h1>
+        <form>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input matInput placeholder="Your Name" type="text" [(ngModel)]="name" [ngModelOptions]="{ standalone : true}">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput placeholder="E-mail" type="mail" [(ngModel)]="mail" [ngModelOptions]="{ standalone : true}">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" type="password" [(ngModel)]="password" [ngModelOptions]="{ standalone : true}">
+            </mat-form-field>
+            <button type="button" mat-flat-button color="primary" routerLink="" (click)="register()" >Signup</button>
+        </form>
+        <p>Already have an account? <a routerLink="">Login</a></p>
+    </div>
+</section>

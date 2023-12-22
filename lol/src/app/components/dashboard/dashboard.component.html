@@ -1,0 +1,18 @@
+<div class="header">
+    <ul>
+        <li>{{name}}</li>
+        <li>logout</li>
+    </ul>
+</div>
+<div class="wrapper">
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+            <li><a routerLink="/dashboard">Home</a></li>
+            <li><a routerLink="student">Student</a></li>
+        </ul>
+    </div>
+    <div class="dashboard">
+        <router-outlet></router-outlet>
+    </div>
+</div>

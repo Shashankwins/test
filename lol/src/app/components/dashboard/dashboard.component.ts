@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-
+  currentUser = JSON.parse(sessionStorage.getItem('currentUser')  || "");
+  name = this.currentUser.name;
 }
